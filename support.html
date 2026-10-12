@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    ,
+    <meta name="description"
+        content="VoaFel Online Gadgets Hub customer support - Get help with orders, products, returns, warranties and general enquiries.">
+    <title>Voafel - Support</title>
+    <link rel="stylesheet" href="style voafel.css">
+    <link rel="stylesheet" href="support.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="brand-name">
+            <a href="index.html" aria-label="VoaFel Home">
+                <img src="image/V1LOGO.jpg" alt="VoaFel Logo" class="brand-logo">
+                <span>VoaFel</span>
+            </a>
+        </div>
+        <div class="language-selector">
+            <label for="language-select" class="sr-only">
+                Select Language
+            </label>
+            <select id="language-select" onchange="switchLanguage(this.value)">
+                <option value="en">English</option>
+                <option value="es">Spanish</option>
+                <option value="fr">French</option>
+                <option value="de">German</option>
+                <option value="it">Italian</option>
+                <option value="pt">Portuguese</option>
+                <option value="nl">Dutch</option>
+                <option value="zh-Hans">Chinese (Simplified)</option>
+                <option value="zh-Hant">Chinese (Traditional)</option>
+                <option value="ja">Japanese</option>
+                <option value="ar">Arabic</option>
+                <option value="ru">Russian</option>
+                <option value="ko">Korean</option>
+            </select>
+        </div>
+        <form class="search-form" action="/search" method="get">
+            <label for="search-input" class="sr-only">
+                Search Products
+            </label>
+            <input type="search" id="search-input" name="q" placeholder="search items..." autocomplete="off">
+            <button type="submit">
+                <i class="fas fa-search"></i>
+                <span>Search</span>
+            </button>
+        </form>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Toggle navigation menu"
+            aria-expanded="false" aria-controls="headerRight">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="header-right" id="headerRight">
+            <nav class="main-nav" aria-label="Main Navigation">
+                <ul>
+                    <li>
+                        <a href="index.html#orders">
+                            <i class="fas fa-box"></i>
+                            My Order
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="index.html#gadgets">
+                            <i class="fas fa-shopping-bag"></i>
+                            All Products
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="index.html#categories">
+                            <i class="fas fa-layer-group"></i>
+                            Categories
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="login.html">
+                            <i class="fas fa-user"></i>
+                            Signup / Login
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="support-hero">
+        <div class="container">
+            <div class="support-hero-content">
+                <span class="section-tag">
+                    CUSTOMER SUPPORT
+                </span>
+                <h1>
+                    How Can We Help You?
+                </h1>
+                <p>
+                    we're here to help you with your orders, gadgets, appliances, returns, warranties, and other
+                    questions, feel free to contact us.
+                </p>
+                <div class="support-heor-actions">
+                    <a href="#support-request" class="support-btn primary-btn">
+                        <i class="fas fa-headset"></i>
+                        Get Support Here
+                    </a>
+                    <a href="#faq" class="support-btn secondary-btn">
+                        <i class="fas fa-circle-question"></i>
+                        View FAQS
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="support-options" id="support-options">
+        <div class="container">
+            <div class="section-heading">
+                <span class="section-tag">
+                    SUPPORT CENTER
+                </span>
+                <h2>
+                    What Do You Need Help With?
+                </h2>
+                <p>
+                    Select the support category that best describes what you need help with.
+                </p>
+            </div>
+
+            <div class="support-grid">
+                <article class="support-card">
+                    <div class="support-card-icon">
+                        <i class="fas fa-mobile-screen-button"></i>
+                    </div>
+                    <h3>
+                        Product Support
+                    </h3>
+                    <p>
+                        Need help setting up, using, or troubleshooting a gadget or appliance?
+                    </p>
+                    <a href="#support-request">
+                        Get Product Help
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </article>
+
+                <article class="support-card">
+                    <div class="support-card-icon">
+                        <i class="fas fa-box"></i>
+                    </div>
+                    <h3>
+                        Order Support
+                    </h3>
+                    <p>
+                        Get assistance with your order, delivery, tracking, or order status.
+                    </p>
+                    <a href="support-request">
+                        Get Order Help
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </article>
+
+                <article class="support-card">
+                    <div class="support-card-icon">
+                        <i class="fas fa-rotate-left"></i>
+                    </div>
+                    <h3>
+                        Returns &amp; Warranty
+                    </h3>
+                    <p>Need assistance with returns, refunds, replacements, or warranties?
+                    </p>
+                    <a href="#support-request">
+                        Returns &amp; Warranty
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </article>
+
+                <article class="support-card">
+                    <div class="support-card-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>
+                        General Support
+                    </h3>
+                    <p>
+                        Do you have another question or need to speak with our support team?
+                    </p>
+                    <a href="#support-request">
+                        Contact Support
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="support-request" id="support-request">
+        <div class="container">
+            <div class="support-request-wrapper">
+                <div class="support-request-info">
+                    <span class="section-tag">
+                        NEED ASSISTANCE?
+                    </span>
+                    <h2>
+                        Send a Support Request
+                    </h2>
+                    <p>
+                        Tell us what you need help with and provide as much information as possible.
+                        Our team will review your request and give you a feedback.
+                    </p>
+                    <div class="support-contact-list">
+                        <div class="support-contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h3>
+                                    Email Support
+                                </h3>
+                                <a href="mailto:voafelgadgetshub@gmail.com">
+                                    voafelgadgetshub@gmail.com
+                                </a>
+                            </div>
+                        </div>
+                        <div class="support-contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h3>
+                                    Phone Support
+                                </h3>
+                                <a href="tel:+2349133405302">
+                                    09133405302
+                                </a>
+                            </div>
+                        </div>
+                        <div class="support-contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h3>
+                                    Support Hours
+                                </h3>
+                                <p>
+                                    Monday - Friday:
+                                    8:00 AM - 4:30 PM
+                                </p>
+                                <p>
+                                    Saturday:
+                                    10:00 AM - 4:00 PM
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="support-form-container">
+                    <form class="support-form" id="supportForm" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="support-name">
+                                Full Name
+                            </label>
+                            <input type="text" id="support-name" name="name" placeholder="Enter your full name"
+                                autocomplete="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="support-email">
+                                Emaill Address
+                            </label>
+                            <input type="email" id="support-email" name="email" placeholder="Enter your email address"
+                                autocomplete="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="support-category">
+                                Support Category
+                            </label>
+                            <select id="support-category" name="category" required>
+                                <option value="">Select a category</option>
+                                <option value="product">Product Support</option>
+                                <option value="order">Order Support</option>
+                                <option value="returns">Return & Warranty</option>
+                                <option value="general">General Support</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="order-number">
+                                Order Number
+                                <span>(optional)</span>
+                            </label>
+
+                            <input type="text" id="order-number" name="order-number" placeholder="e.g. VF-000123">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="support-priority">
+                                Priority
+                            </label>
+
+                            <select id="support-priority" name="priority">
+                                <option value="normal">
+                                    Normal
+                                </option>
+
+                                <option value="important">
+                                    Important
+                                </option>
+
+                                <option value="urgent">
+                                    Urgent
+                                </option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="support-message">
+                                How Can We Help?
+                            </label>
+
+                            <textarea id="support-message" name="message" rows="6"
+                                placeholder="please describe your issue or question..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="support-submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Support Request
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="support-faq" id="faq">
+        <div class="container">
+            <div class="section-heading">
+                <span class="section-tag">
+                    FAQ
+                </span>
+                <h2 class="section-title">
+                    Frequently Asked Questions
+                </h2>
+                <p>
+                    Find quick answers to some common questions about VoaFel.
+                </p>
+            </div>
+            <div class="faq-container">
+                <article class="faq-item">
+                    <button class="faq-questions" type="button" aria-expanded="false">
+
+                    </button>
+                </article>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

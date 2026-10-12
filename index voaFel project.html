@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="VoaFel Online Gadgets Hub - Shop quality gadgets, accessories, home appliances and kitchen appliances at affordable prices.">
+    <title>
+        VoaFel Online Gadgets Hub
+    </title>
+    <link rel="stylesheet" href="style voafel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="brand-name">
+            <a href="#home" aria-label="VoaFel Home">
+                <img src="image/V1LOGO.jpg" alt="VoaFel Logo" class="brand-logo">
+                <span>VoaFel</span>
+            </a>
+        </div>
+
+        <div class="language-selector">
+            <label for="language-select" class="sr-only">
+                Select Language
+            </label>
+            <select id="language-select" onchange="switchLanguage(this.value)">
+                <option value="en">English</option>
+                <option value="es">Spanish</option>
+                <option value="fr">French</option>
+                <option value="de">German</option>
+                <option value="it">Italian</option>
+                <option value="pt">Portuguese</option>
+                <option value="nl">Dutch</option>
+                <option value="zh-Hans">Chinese(Simplified)</option>
+                <option value="zh-Hant">Chinese(Traditional)</option>
+                <option value="ja">Japanese</option>
+                <option value="ar">Arabic</option>
+                <option value="ru">Russian</option>
+                <option value="ko">Korean</option>
+            </select>
+        </div>
+
+        <form class="search-form" action="/search" method="GET">
+            <label for="search-input" class="sr-only">
+                Search products
+            </label>
+            <input type="search" id="search-input" name="q" placeholder="Search items..." autocomplete="off">
+            <button type="submit"><i class="fas fa-search"></i><span>
+                    Search
+                </span>
+            </button>
+        </form>
+
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Toggle navigation menu"
+            aria-expanded="false" aria-controls="headerRight">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="header-right" id="headerRight">
+            <nav class="main-nav" aria-label="Main Navigation">
+                <ul>
+                    <li><a href="#orders"><i class="fas fa-box"></i>
+                            My Order
+                        </a>
+                    </li>
+                    <li><a href="#products"><i class="fas fa-shopping-bag"></i>
+                            All Products
+                        </a>
+                    </li>
+                    <li><a href="support.html"><i class="fas fa-headset"></i>
+                            Support
+                        </a>
+                    </li>
+                    <li><a href="#categories"><i class="fas fa-layer-group"></i>
+                            Categories
+                        </a>
+                    </li>
+                    <li><a href="login.html"><i class="fas fa-user"></i>
+                            Signup / Login
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="hero-greeting">
+                        HELLO!
+                    </p>
+                    <h1>
+                        Your Welcome To VoaFel Online Store
+                    </h1>
+                    <p>
+                        A market place where you can purchase your daily essentials at affordable prices.
+                    </p>
+                    <h2>
+                        VoaFel
+                    </h2>
+                    <p class="highlight">
+                        We aim to be one of the best online stores for making your everyday
+                        living more fun, reliable, and convenient.
+
+                        From audio gear to smart accessories, we stock original products at affordable
+                        prices.
+                        <a href="#home" class="text-link">
+                            VoaFel
+                        </a>
+                        is a brand you can trust, with over five years of serving customers across Nigeria.
+                    </p>
+                </div>
+            </div>
+            <button class="shop-button" type="button"><i class="fas fa-cart-shopping"></i>
+                Shop Now
+            </button>
+        </section>
+
+        <section class="about-stats" aria-label="VoaFel Store Statistics">
+            <div class="stat"><span class="stat-number">
+                    5+
+                </span><span class="stat-label">
+                    Years of Satisfaction
+                </span>
+            </div>
+            <div class="stat"><span class="stat-number">
+                    1,000+
+                </span>
+                <span class="stat-label">
+                    Recommendations
+                </span>
+            </div>
+            <div class="stat"><span class="stat-number">
+                    100%
+                </span>
+                <span class="stat-label">
+                    Customers Satisfaction
+                    &amp;
+                    Dedication
+                </span>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="market-controls" aria-label="Shopping Controls">
+            <button class="market-button" type="button"><i class="fas fa-store"></i>
+                Explore Market
+            </button>
+            <button class="cart-button" type="button"><i class="fas fa-cart-shopping"></i>
+                View Cart
+            </button>
+            <button class="save-button" type="button"><i class="fas fa-bookmark"></i>
+                Save For Later
+            </button>
+            <button class="history-button" type="button"><i class="fas fa-clock-rotate-left"></i>
+                History
+            </button>
+        </section>
+
+        <hr>
+
+        <section id="categories" class="marketplace-intro">
+            <h1>
+                Explore Our Marketplace
+            </h1>
+        </section>
+
+        <section id="gadgets" class="section gadgets-section">
+            <div class="container">
+                <div class="section-heading"><span class="section-tag">
+                        TECHNOLOGY
+                    </span>
+                    <h2 class="section-title">
+                        Gadgets
+                        &amp;
+                        Accessories
+                    </h2>
+                    <p>
+                        Discover quality gadgets and accessories designed to make your everyday life
+                        easier.
+                    </p>
+                </div>
+
+                <div class="gadgets-grid">
+                    <div class="item-card"><i class="fas fa-mobile-screen-button"></i>
+                        <span>
+                            Phones
+                        </span>
+                    </div>
+                    <div class="item-card"><i class="fas fa-headphones"></i>
+                        <span>
+                            Headphones
+                        </span>
+                    </div>
+                    <div class="item-card"><i class="fas fa-laptop"></i>
+                        <span>
+                            Laptops
+                        </span>
+                    </div>
+                    <div class="item-card"><i class="fas fa-box"></i>
+                        <span>
+                            Cases
+                        </span>
+                    </div>
+                    <div class="item-card"><i class="fas fa-headset"></i>
+                        <span>
+                            Ear Piece
+                        </span>
+                    </div>
+                    <div class="item-card"><i class="fas fa-shield-halved"></i>
+                        <span>
+                            Screen Guards
+                        </span>
+                    </div>
+                    <div class="item-card"><i class="fas fa-plug"></i>
+                        <span>
+                            Android / Type-C Cables
+                        </span>
+                    </div>
+                    <div class="item-card"><i class="fas fa-battery-full"></i>
+                        <span>
+                            Power Bank
+                        </span>
+                    </div>
+                    <div class="item-card"><i class="fas fa-charging-station"></i>
+                        <span>
+                            Charger Heads
+                        </span>
+                    </div>
+                    <div class="item-card"><i class="fas fa-battery-half"></i>
+                        <span>
+                            Cell Batteries
+                        </span>
+                    </div>
+                    <div class="item-card"><i class="fas fa-ellipsis-h"></i>
+                        <span>
+                            Others
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="appliances" class="section appliances-section">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="section-tag">
+                        HOME
+                        &amp;
+                        KITCHEN
+                    </span>
+
+                    <h2 class="section-title">
+                        Appliances
+                    </h2>
+                    <p>
+                        Reliable appliances for your home and everyday lifestyle.
+                    </p>
+                </div>
+
+                <div class="appliance-category">
+                    <h3>
+                        Home Appliances
+                    </h3>
+                    <div class="appliances-grid">
+                        <div class="item-card"><i class="fas fa-shirt"></i>
+                            <span>
+                                Washers
+                            </span>
+                        </div>
+                        <div class="item-card"><i class="fas fa-wind"></i>
+                            <span>
+                                Dryers
+                            </span>
+                        </div>
+                        <div class="item-card"><i class="fas fa-broom"></i>
+                            <span>
+                                Vacuum Cleaners
+                            </span>
+                        </div>
+                        <div class="item-card"><i class="fas fa-snowflake"></i>
+                            <span>
+                                Air Conditioners
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="appliance-category">
+                    <h3>
+                        Kitchen Appliances
+                    </h3>
+                    <div class="appliances-grid">
+                        <div class="item-card"><i class="fas fa-blender"></i>
+                            <span>
+                                Blenders
+                            </span>
+                        </div>
+                        <div class="item-card"><i class="fas fa-temperature-high"></i>
+                            <span>
+                                Ovens
+                            </span>
+                        </div>
+                        <div class="item-card"><i class="fas fa-snowflake"></i>
+                            <span>
+                                Refrigerators
+                            </span>
+                        </div>
+                        <div class="item-card">
+                            <i class="fas fa-microwaves"></i>
+                            <span>Microwaves</span>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="customer-reviews" id="reviews">
+            <div class="container">
+                <div class="review-header"><span class="section-tag">
+                        CUSTOMER FEEDBACK
+                    </span>
+                    <h2>
+                        What Our Customers Say
+                    </h2>
+                    <p>
+                        Hear what our customers have to say about our appliances,
+                        products, services and shopping experience.
+                    </p>
+                </div>
+
+                <div class="overall-rating">
+                    <div class="rating-score">
+                        <h3>
+                            5.0
+                        </h3>
+
+                        <div class="stars" aria-label="5 out of 5 stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+
+                        <p>
+                            Based on 325 reviews
+                        </p>
+                    </div>
+
+                    <div class="rating-bars">
+                        <div class="rating-row">
+                            <span>
+                                5
+                            </span>
+                            <i class="fas fa-star"></i>
+                            <div class="rating-bar">
+                                <div class="rating-progress" style="width: 85%;"></div>
+                            </div>
+                            <span>
+                                85%
+                            </span>
+                        </div>
+
+                        <div class="rating-row">
+                            <span>
+                                4
+                            </span>
+                            <i class="fas fa-star"></i>
+                            <div class="rating-bar">
+                                <div class="rating-progress" style="width: 10%;"></div>
+                            </div>
+                            <span>
+                                10%
+                            </span>
+                        </div>
+
+                        <div class="rating-row">
+                            <span>
+                                3
+                            </span><i class="fas fa-star"></i>
+                            <div class="rating-bar">
+                                <div class="rating-progress" style="width: 3%;">
+
+                                </div>
+                            </div>
+                            <span>
+                                3%
+                            </span>
+                        </div>
+
+                        <div class="rating-row">
+                            <span>
+                                2
+                            </span><i class="fas fa-star"></i>
+                            <div class="rating-bar">
+                                <div class="rating-progress" style="width: 1%;">
+
+                                </div>
+                            </div>
+                            <span>
+                                1%
+                            </span>
+                        </div>
+
+                        <div class="rating-row">
+                            <span>
+                                1
+                            </span><i class="fas fa-star"></i>
+                            <div class="rating-bar">
+                                <div class="rating-progress" style="width: 1%;"></div>
+                            </div>
+                            <span>
+                                1%
+                            </span>
+                        </div>
+                    </div>
+
+                    <article class="review-card">
+                        <div class="customer-info">
+                            <div class="customer-avatar">
+                                JA
+                            </div>
+
+                            <div>
+                                <h4>
+                                    Jerry Akor
+                                </h4>
+                                <p>
+                                    Verified Customer
+                                </p>
+                            </div>
+                            <span class="review-date">
+                                4 days ago
+                            </span>
+                        </div>
+
+                        <div class="review-rating" aria-label="5 out of 5 stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+
+                        <h3>
+                            Excellent Washing Machine
+                        </h3>
+                        <p class="review-text">
+                            The washing machine is excellent. It works quietly, washes very well, and
+                            was delivered on time. I'm really happy with my purchase.
+                        </p>
+
+                        <div class="review-product">
+                            <i class="fas fa-shirt"></i>
+                            <span>
+                                Washing Machine
+                            </span>
+                        </div>
+
+                        <button class="helpful-btn" type="button"><i class="fa-regular fa-thumbs-up"></i>
+                            Helpful
+                        </button>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="customer-info">
+                            <div class="customer-avatar">
+                                OJ
+                            </div>
+
+                            <div>
+                                <h4>
+                                    Ojobo Jerry
+                                </h4>
+                                <p>
+                                    Verified Customer
+                                </p>
+                            </div>
+
+                            <span class="review-date">
+                                1 week ago
+                            </span>
+                        </div>
+
+                        <div class="review-rating" aria-label="5 out of 5 stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+
+                        <h3>
+                            Great Refrigerator
+                        </h3>
+                        <p>
+                            The refrigerator looks great and keeps everything properly
+                            chilled. The customer service was also very helpful throughout the purchase.
+                        </p>
+
+                        <div class="review-product">
+                            <i class="fas fa-snowflake"></i>
+                            <span>
+                                Refrigerator
+                            </span>
+                        </div>
+
+                        <button class="helpful-btn" type="button">
+                            <i class="fa-regular fa-thumbs-up"></i>
+                            Helpful
+                        </button>
+                    </article>
+                </div>
+
+                <div class="write-review">
+                    <h3>
+                        Have You Purchased From Us?
+                    </h3>
+                    <p>
+                        Please share your experience and help other customers
+                        make the right choice.
+                    </p>
+
+                    <button class="write-review-btn" id="openReviewForm" type="button">
+                        <i class="fas fa-pen"></i>
+                        Write a Review
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="contact" id="contact-section">
+            <div class="container">
+                <div class="contact-header">
+                    <span class="section-tag">
+                        GET IN TOUCH
+                    </span>
+
+                    <h2>
+                        Contact Us
+                    </h2>
+
+                    <p>
+                        Do you have a question, need assistance, or want to learn more about
+                        our appliances and products?
+                        We'd love to hear from you.
+                    </p>
+                </div>
+
+                <div class="contact-container">
+                    <div class="contact-details">
+                        <h3>
+                            Contact Details
+                        </h3>
+                        <address>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-location-dot"></i>
+                                </div>
+                                <div class="contact-info">
+                                    <h4>
+                                        Our Office
+                                    </h4>
+                                    <p>
+                                        Beside Primary Health Care Sign-Post Bukan-Sidi, locate
+                                        along Jos Road
+                                        Bukan-Sidi district of Lafia, Nasarawa State.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-info">
+                                    <h4>
+                                        Email Us
+                                    </h4>
+                                    <a href="mailto:voafelgadgetshub@gmail.com">
+                                        voafelgadgetshub@gmail.com
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-info">
+                                    <h4>
+                                        Call Us
+                                    </h4>
+                                    <a href="tel:+2349133405302">
+                                        09133405302
+                                    </a>
+                                </div>
+                            </div>
+                        </address>
+
+                        <div class="social-media">
+                            <h3>
+                                Follow Us Below
+                            </h3>
+                            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="#" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-message">
+                    <h3>
+                        We're Here to Help
+                    </h3>
+                    <p>
+                        Are you looking for a new appliance, Do you need assistance with an existing purchase, or do you
+                        simply have a question, complaint?
+
+                        Our team is dedicated and always ready to
+                        assist you.
+                    </p>
+
+                    <div class="contact-hours">
+                        <h4>
+                            <i class="fas fa-clock"></i>
+                            Business Hours
+                        </h4>
+                        <p>
+                            Monday - Friday: 8:00 AM - 4:30 PM
+                        </p>
+                        <p>Saturday: 10:00 AM - 4:00 PM
+                        </p>
+                        <p>
+                            Sunday: Closed
+                        </p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>
+                    VoaFel
+                </h3>
+
+                <p>
+                    Quality gadgets, accessories, and home appliances designed to make your everyday
+                    life easier, smarter, and more comfortable.
+                </p>
+
+                <div class="footer-socials">
+
+                    <a href="#" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3>
+                    Quick Links
+                </h3>
+                <ul>
+                    <li>
+                        <a href="#home">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#gadgets">
+                            Gadgets
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#appliances">
+                            Appliances
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#reviews">
+                            Reviews
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact-section">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>
+                    Appliances
+                </h3>
+                <ul>
+                    <li>
+                        <a href="#appliances">
+                            Washers &amp; Dryers
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#appliances">
+                            Refrigerators
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#appliances">
+                            Air Conditioners
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#appliances">
+                            Ovens
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#appliances">
+                            Microwaves
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#appliances">
+                            Blenders
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>
+                    Contact Us
+                </h3>
+
+                <address>
+                    <p>
+                        <i class="fas fa-location-dot"></i>
+                        Beside Primary Health Care Centre Bukan-Sidi, along Jos Road, Bukan-Sidi
+                        District of Lafia, Nasarawa State.
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:voafelgadgetshub@gmail.com">
+                            voafelgadgetshub@gmail.com
+                        </a>
+                    </p>
+                    <p>
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+2349133405302">
+                            09133405302
+                        </a>
+                    </p>
+                </address>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                &copy; 2026 VoaFel Online Gadgets Hub. All rights reserved.
+            </p>
+
+            <div class="footer-bottom-links">
+                <a href="#">
+                    Privacy Policy
+                </a>
+                <a href="#">
+                    Terms &amp; Conditions
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
